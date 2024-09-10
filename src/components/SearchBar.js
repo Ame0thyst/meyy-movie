@@ -3,6 +3,7 @@ import Movie from "./Movie";
 import DefaultList from "./DefaultList";
 import "../App.css";
 
+
 const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
