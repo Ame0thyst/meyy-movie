@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Movie from "./Movie";
 import DefaultList from "./DefaultList";
 import "../App.css";
-
+import logo from "../assets/bg.jpg"
 
 const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,8 +42,8 @@ const SearchBar = () => {
 
   return (
     <div>
-      <form action="" className="form">
-        <h1>Movie App</h1>
+      {/* <form action="" className="form">
+        <h1 className="hero-pattern">Movie App</h1>
 
         <input
           type="text"
@@ -52,11 +52,11 @@ const SearchBar = () => {
           value={searchQuery}
           className="search-input"
         />
-      </form>
-      {/* <form action="" className="form flex items-center">
+      </form> */}
+      <form action="" className="form flex items-center">
   <a href="https://github.com/Ame0thyst" target="_blank" rel="noopener noreferrer">
   <img
-  src="#" 
+  src={logo} 
   alt="Company Logo"
   className="company-logo transition-all duration-300 ease-in-out"
 />
@@ -71,7 +71,7 @@ const SearchBar = () => {
     value={searchQuery}
     className="search-input ml-4"
   />
-</form> */}
+</form>
 
       {error && <p>{error}</p>}
 
